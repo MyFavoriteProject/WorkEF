@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestBdModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Blog">
+    <Key>
+      <PropertyRef Name="BlogId" />
+    </Key>
+    <Property Name="BlogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="BlogUser" Relationship="Self.FK_Blog_BlogUser" FromRole="Blog" ToRole="BlogUser" />
+  </EntityType>
+  <EntityType Name="BlogUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SecondtName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RegistrationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Blog" Relationship="Self.FK_Blog_BlogUser" FromRole="BlogUser" ToRole="Blog" />
+  </EntityType>
+  <Association Name="FK_Blog_BlogUser">
+    <End Role="BlogUser" Type="Self.BlogUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Blog" Type="Self.Blog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BlogUser">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Blog">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TestDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Blog" EntityType="Self.Blog" />
+    <EntitySet Name="BlogUser" EntityType="Self.BlogUser" />
+    <AssociationSet Name="FK_Blog_BlogUser" Association="Self.FK_Blog_BlogUser">
+      <End Role="BlogUser" EntitySet="BlogUser" />
+      <End Role="Blog" EntitySet="Blog" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

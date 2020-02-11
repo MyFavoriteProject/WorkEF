@@ -1,0 +1,11 @@
+C:\Users\home\source\repos\WorkEF\WorkEF\bin\Debug\WorkEF.exe.config
+C:\Users\home\source\repos\WorkEF\WorkEF\bin\Debug\WorkEF.exe
+C:\Users\home\source\repos\WorkEF\WorkEF\bin\Debug\WorkEF.pdb
+C:\Users\home\source\repos\WorkEF\WorkEF\bin\Debug\EntityFramework.dll
+C:\Users\home\source\repos\WorkEF\WorkEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\home\source\repos\WorkEF\WorkEF\bin\Debug\EntityFramework.xml
+C:\Users\home\source\repos\WorkEF\WorkEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\home\source\repos\WorkEF\WorkEF\obj\Debug\WorkEF.csprojAssemblyReference.cache
+C:\Users\home\source\repos\WorkEF\WorkEF\obj\Debug\WorkEF.csproj.CopyComplete
+C:\Users\home\source\repos\WorkEF\WorkEF\obj\Debug\WorkEF.exe
+C:\Users\home\source\repos\WorkEF\WorkEF\obj\Debug\WorkEF.pdb

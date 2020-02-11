@@ -1,0 +1,11 @@
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\bin\Debug\LowLevelQuery.exe.config
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\bin\Debug\LowLevelQuery.exe
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\bin\Debug\LowLevelQuery.pdb
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\bin\Debug\EntityFramework.dll
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\bin\Debug\EntityFramework.xml
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\obj\Debug\LowLevelQuery.csprojAssemblyReference.cache
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\obj\Debug\LowLevelQuery.csproj.CopyComplete
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\obj\Debug\LowLevelQuery.exe
+C:\Users\home\source\repos\WorkEF\LowLevelQuery\obj\Debug\LowLevelQuery.pdb
